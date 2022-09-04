@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Table</title>
+
+    <!-- Styling -->
+    <style>
+      /*
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+      */
+      /*
+      MAIN COLOR: #087f5b
+      GREY COLOR: #343a40
+      */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Inter", sans-serif;
+        color: #343a40;
+        line-height: 1;
+      }
+      .table {
+        width: 800px;
+        margin: 100px auto;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        padding: 24px;
+      }
+      th {
+        text-align: left;
+      }
+      .table-header {
+        background-color: #087f5b !important;
+        color: #fff;
+      }
+      .table-header th {
+        width: 25%;
+      }
+      tr:nth-child(odd) {
+        background-color: #e9ecef;
+      }
+      tr:nth-child(even) {
+        background-color: #f8f9fa;
+      }
+    </style>
+  </head>
+  <body>
+    <table class="table">
+      <thead>
+        <tr class="table-header">
+          <th class="table-row-heading">Chair</th>
+          <th>The Laid Back</th>
+          <th>The worker bee</th>
+          <th>The chair 4/2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th class="table-row-heading">Width</th>
+          <td>80cm</td>
+          <td>60cm</td>
+          <td>220cm</td>
+        </tr>
+        <tr>
+          <th class="table-row-heading">Height</th>
+          <td>100cm</td>
+          <td>110cm</td>
+          <td>90cm</td>
+        </tr>
+        <tr>
+          <th class="table-row-heading">Depth</th>
+          <td>70cm</td>
+          <td>65cm</td>
+          <td>80cm</td>
+        </tr>
+        <tr>
+          <th class="table-row-heading">Weight</th>
+          <td>16kg</td>
+          <td>22kg</td>
+          <td>80kg</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
