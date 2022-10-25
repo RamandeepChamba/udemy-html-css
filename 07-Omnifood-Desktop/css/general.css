@@ -37,13 +37,14 @@
   
   --- 06 BORDER-RADIUS
   Default: 9px
+  Medium: 11px
   
   --- 07 WHITESPACE
   
   - SPACING SYSTEM (px)
   2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
   
-*/
+  */
 * {
   padding: 0;
   margin: 0;
@@ -62,6 +63,9 @@ body {
   font-size: 1.6rem;
 }
 
+strong {
+  font-weight: 600;
+}
 /********************************/
 /* General Reusable Elements */
 /********************************/
@@ -92,7 +96,8 @@ body {
 }
 
 .heading-primary,
-.heading-secondary {
+.heading-secondary,
+.heading-tertiary {
   font-weight: 700;
   color: #333;
   letter-spacing: -0.7px;
@@ -157,6 +162,30 @@ body {
   box-shadow: inset 0 0 0 3px #fff;
 }
 
+.link:link,
+.link:visited {
+  display: inline-block;
+  color: #e67e22;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  transition: all 0.3s;
+}
+.link:hover,
+.link:active {
+  color: #cf711f;
+  border-bottom: 1px solid transparent;
+}
+
+/* HELPER/SETTINGS CLASSES */
 .margin-right-sm {
   margin-right: 1.6rem !important;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+
+.center-text {
+  text-align: center;
 }
