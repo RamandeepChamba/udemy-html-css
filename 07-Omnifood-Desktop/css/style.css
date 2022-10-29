@@ -368,7 +368,7 @@
 .feature-icon {
   width: 3.2rem;
   height: 3.2rem;
-  color: #cf711f;
+  color: #e67e22;
   background-color: #fdf2e9;
   padding: 1.6rem;
   border-radius: 50%;
@@ -382,4 +382,26 @@
 .feature-text {
   font-size: 1.8rem;
   line-height: 1.8;
+}
+/********************************/
+/* CTA section */
+/********************************/
+.section-cta {
+  padding: 9.6rem 0;
+}
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+  height: 500px;
+}
+.cta-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(235, 151, 78, 0.3),
+      rgba(230, 125, 34, 0.3)
+    ),
+    url("../img/eating.jpg");
+  background-size: cover;
+  background-position: center;
 }
