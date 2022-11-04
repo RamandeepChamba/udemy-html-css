@@ -61,6 +61,7 @@
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -69,6 +70,7 @@ body {
   font-weight: 400;
   color: #555;
   font-size: 1.6rem;
+  overflow-x: hidden;
 }
 
 strong {
